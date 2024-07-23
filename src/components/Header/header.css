@@ -1,0 +1,213 @@
+:root {
+    --PrimaryColor: hsl(0, 100%, 50%);
+    --SecondaryColor: linear-gradient(to right, #1F1717, #856363);
+    --gradientColor: linear-gradient(to right, #C61616, #e79d9d);
+    --gradientColor2: linear-gradient(to bottom, #C61616, #e79d9d);
+    --gradientColor3: linear-gradient(to right, #1F1717, #4a4a4a);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(0, 0%, 0%);
+    --whiteColorDream: hsl(0, 72%, 75%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(293, 293, 293);
+    --cardBG: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.home {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../../Assets/BG.PNG');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; /* Ensure full height */
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 1200px;
+    color: black;
+    z-index: 100;
+    margin: auto;
+}
+
+.textDiv {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.homeTitle {
+    font-size: 2rem; /* Adjusted for smaller screens */
+    position: relative;
+    color: aliceblue;
+}
+
+.homeTitle::after {
+    position: absolute;
+    content: '';
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 145px;
+    right: 0;
+    bottom: 5px;
+    z-index: -1;
+}
+
+.formedesc {
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 90%;
+    overflow: hidden; /* Pour s'assurer que le pseudo-élément ne dépasse pas */
+}
+
+.formedesc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 0, 0, 0.3); /* Couleur rouge avec transparence */
+    backdrop-filter: blur(4px);
+    z-index: -1; /* Pour que le pseudo-élément soit derrière le contenu */
+}
+
+
+
+.desc {
+    color: black;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.desc p {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.homeFooterIcons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.rightIcons, .leftIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.25rem;
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.icon:hover {
+    color: var(--PrimaryColor);
+}
+
+.btndes {
+    margin-top: 1rem;
+    background-color: #d04343;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #911d1d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btndes a {
+    font-weight: 600;
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btndes:hover {
+    background: var(--SecondaryColor);
+    border-color: #1F1717;
+}
+
+@media screen and (min-width: 500px) {
+    .homeContent {
+        padding: 4rem 1.5rem 3rem; /* Adjusted padding */
+    }
+
+    .homeTitle {
+        font-size: 2.5rem; /* Adjusted for medium screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .homeTitle {
+        font-size: 3rem; /* Adjusted for medium-large screens */
+    }
+
+    .desc {
+        font-size: 1.1rem; /* Slightly larger text */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home {
+        height: 80vh;
+    }
+
+    .homeContent {
+        padding: 6rem 2rem 4rem; /* Adjusted padding for large screens */
+    }
+
+    .homeTitle {
+        font-size: 3.5rem; /* Adjusted for large screens */
+    }
+
+    .desc {
+        font-size: 1.2rem; /* Larger text */
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home {
+        height: 85vh;
+    }
+
+    .homeContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .homeTitle {
+        font-size: 4rem; /* Adjusted for extra large screens */
+    }
+
+    .desc {
+        font-size: 1.25rem; /* Larger text */
+    }
+}

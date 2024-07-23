@@ -1,0 +1,280 @@
+/*colors and style*/
+
+:root{
+    --PrimaryColor: hsl(0, 87%, 71%);
+    --SecondaryColor:linear-gradient(to right,#1F1717,#856363);
+    --gradientColor:linear-gradient(to right,#C61616,#e79d9d);
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(0, 0%, 0%);
+    --whiteColorDream:hsl(0, 72%, 75%);
+    --greyText:rgb(190,190,190);
+    --inputColor: rgb(293 , 293, 293);
+    --bodyColor:rgb(240,240,246);
+    --cardBG:rgb(255,255,255);
+}
+
+
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(250, 84, 84);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+   
+   .logo{
+     color: var(--blackColor);
+     font-weight: 600;
+     cursor: pointer;
+     align-items: center;
+     justify-content: center;
+
+     .icon{
+        font-size: 25px;
+        color: var(--PrimaryColor);
+        transform: translateY(5px);
+     }
+
+     } 
+
+    @media screen and (max-width: 768px){
+
+    .navBar{
+        position: absolute;
+        background: var(--whiteColorDream);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        left: 50%;
+        padding: 1rem;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+        transition: .5s ease-in-out;
+
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding: .5rem 0;
+        }
+        .navLink{
+            color: var(--textColor);
+            font-size: .9rem;
+            font-weight: 600;
+            &:hover{
+                color: var(--PrimaryColor);
+            }
+        }
+    }
+
+    .activeNavbar{
+        top: 7rem;
+    }
+
+    .btn{
+        margin-top: 1rem;
+
+        a{
+            font-weight: 600;
+            color: var(--whiteColor);
+        }
+    }
+    
+    .closeNavbar{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+        &:hover{
+            color: var(--SecondaryColor);
+        }
+    }
+    }
+
+    .toggleNavbar{
+        .icon{
+            font-size: 25px;
+            color:var(--PrimaryColor);
+        }
+        &:hover.icon{
+            color: var(--SecondaryColor);
+        }
+    }
+    
+    
+    }
+
+@media screen and (min-width: 769px) {
+     .toggleNavbar,.closeNavbar{
+        display: none;
+     }
+
+     .header{
+        padding: 1.5rem 2rem;
+
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem{
+                    .navLink{
+                        color: var(--textColor);
+                        padding: 0 0.45rem;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+
+                        
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+
+                    a{
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+     }
+}
+
+@media screen and (min-width: 960px) {
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1240px) {
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 1 8.5rem;
+                }
+            }
+        }
+    }
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none ;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+     display: flex;
+     align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--SecondaryColor);
+}
+
+img,video{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+body{
+    background: var(--bodyColor);
+}
+
+@media screen and (min-width: 1240px) {
+
+    .container{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section{
+        padding: 6rem 0 4rem;
+    }
+    
+}
+
+@media screen and (min-width: 2560px){
+    body{
+        zoom: 1.7;
+    }
+}

@@ -1,0 +1,154 @@
+.avantagecont {
+    width: 100%;
+    height: auto;
+    background: #E0E3E6;
+    align-items: center;
+    padding: 0 1rem; /* Ajouter un padding horizontal pour les petits écrans */
+}
+
+.title {
+    position: relative;
+    width: max-content;
+    color: var(--textColor);
+    padding-top: 10rem;
+    padding-left: 2rem;
+    font-size: 2.5rem; /* Taille de la police relative pour le titre */
+    text-align: center; /* Centrer le titre pour les petits écrans */
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: var(--SecondaryColor);
+        height: 5px;
+        width: 180px;
+        right: 0;
+        bottom: 5px;
+        z-index: -1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments aux extrémités */
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser si nécessaire */
+}
+
+.left, .right {
+    width: 45%; /* Ajuster la largeur des sections pour laisser de l'espace entre elles */
+    font-size: 1.2rem; /* Taille de la police ajustée pour petits écrans */
+    text-align: left; /* Aligner le texte à gauche pour .left et à droite pour .right */
+}
+
+.right {
+    text-align: right; /* Alignement du texte à droite */
+    padding-left: 0; /* Supprimer le padding gauche pour les petits écrans */
+}
+
+.imgqst {
+    width: 80%; /* Redimensionner l'image pour les petits écrans */
+    max-width: 300px; /* Limiter la taille maximale de l'image */
+    margin-top: 1rem;
+}
+
+.middle {
+    width: 10%; /* Ajuster la largeur pour laisser de l'espace entre les sections */
+    text-align: center;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.middle span {
+    font-size: 2rem; /* Réduire la taille du texte pour les petits écrans */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem; /* Ajuster le padding inférieur */
+}
+
+.btnavt {
+    background-color: #d04343;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #911d1d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btnavt a {
+    font-weight: 600;
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-size: 1rem; /* Ajuster la taille de la police du bouton */
+}
+
+.btnavt:hover {
+    background: var(--SecondaryColor);
+    border-color: #1F1717;
+}
+/* Médias queries pour les écrans de tablettes et petits écrans */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem; /* Réduire la taille de la police pour les écrans plus petits */
+        padding-top: 5rem;
+        padding-left: 1rem;
+    }
+
+    .container {
+        flex-direction: column; /* Les éléments s'empilent verticalement sur petits écrans */
+        align-items: center; /* Centrer les éléments pour les petits écrans */
+    }
+
+    .left, .right {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center; /* Centrer le texte sur petits écrans */
+    }
+
+    .middle {
+        font-size: 1.5rem;
+    }
+}
+
+/* Médias queries pour les très petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-left: 0.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .left, .right {
+        font-size: 0.9rem;
+    }
+
+    .middle span {
+        font-size: 1.2rem;
+    }
+
+    .btnavt {
+        width: 100%;
+        max-width: 150px;
+    }
+}
