@@ -1,0 +1,128 @@
+.login-box {
+  padding-top: 100px;
+}
+
+.login-container, .signup-box {
+  background-color: rgba(255, 75, 75, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+  width: 90%;
+  max-width: 500px; /* Ensure the containers are responsive */
+  margin: auto;
+  align-items: center; /* Center the form elements */
+  text-align: center;
+}
+
+.signup-box {
+  margin-bottom: 100px;
+}
+
+.login-box h2, .signup-box h3 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  width: 100%;
+}
+
+.input-group label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px 35px 10px 35px; /* Adjusted padding to make room for both icons */
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: grey;
+}
+
+.input-group .icon:first-child {
+  left: 10px;
+}
+
+.password-group .toggle-password {
+  right: 10px;
+  cursor: pointer;
+  color: grey;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.remember-me label {
+  color: white;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.forgot-password {
+  display: block;
+  color: white;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.forgot-password:hover {
+  text-decoration: none;
+}
+
+.Button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.Button:hover {
+  color: rgb(93, 21, 21);
+  background-color: white;
+  font-weight: bolder;
+}
+
+.Button_sign_up {
+  background-color: transparent;
+  color: rgb(93, 21, 21);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+
+.Button_sign_up:hover {
+  color: white;
+}
