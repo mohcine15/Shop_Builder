@@ -1,0 +1,158 @@
+.form {
+    background-color: rgba(255, 75, 75, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    width: 60%;  /* Adjusted width to make the form more compact */
+    margin: auto;
+    align-items: center;  /* Center the form elements */
+    margin-bottom: 100px;
+}
+
+.form-content {
+    width: 100%;
+}
+
+.form-group {
+    padding: 10px;
+    border: 1px solid white; /* White border around each form group */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 100%;  /* Make the group take the full width of the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  /* Center the text inside the form-group */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group .color-picker {
+    width: 80%;  /* Reduced width to make the inputs smaller */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;  /* Center the text inside the inputs */
+    max-width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.dropdown-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.product-image {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.save-button,
+.add-button,
+.hide-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover,
+.add-button:hover,
+.hide-button:hover {
+    background-color: #555;
+}
+
+.packages-list {
+    width: 100%;
+}
+
+.package-item {
+    padding: 10px;
+    border: 1px solid white; /* White border around each package item */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.package-item img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}

@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(239, 74, 74, 0.8);
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 40px; /* Adjust height as necessary */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .user-info .user-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.nav-links.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(239, 74, 74, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-links li {
+    margin: 10px 0;
+    text-align: center;
+}
+.menu-icon {
+    cursor: pointer;
+}

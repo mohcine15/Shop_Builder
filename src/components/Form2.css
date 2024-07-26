@@ -1,0 +1,240 @@
+.form {
+    background-color: rgba(255, 75, 75, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    width: 60%;  /* Adjusted width to make the form more compact */
+    margin: auto;
+    align-items: center;  /* Center the form elements */
+    margin-bottom: 100px;
+}
+
+.form-group {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 1px solid white;  /* White border */
+    width: 100%;  /* Make the group take the full width of the form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  /* Center the text inside the form-group */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group .color-picker {
+    width: 80%;  /* Reduced width to make the inputs smaller */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;  /* Center the text inside the inputs */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  /* Ensure the buttons take full width */
+}
+
+.form-buttons .prev-button,
+.form-buttons .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.form-buttons .prev-button:hover,
+.form-buttons .next-button:hover {
+    background-color: #555;
+}
+/* src/components/Form.css */
+.form-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-container li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.file-input-container p {
+    margin: 0;
+    padding: 10px;
+}
+
+.file-input-container button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.file-input-container button:hover {
+    background-color: #cc0000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.prev-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.prev-button:hover {
+    background-color: #007bff;
+}
+
+.next-button:hover {
+    background-color: #007bff;
+}
+.styled-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* Price box container for horizontal alignment */
+.price-box-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for adjust buttons */
+.adjust-button {
+    position: relative;
+    top: -5px; /* Moves the element down by 10px */
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px; /* Adjust margin between buttons and other elements */
+}
+
+/* Hover effect for buttons */
+.adjust-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for price input */
+.price-input-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Allows absolute positioning of dollar sign */
+}
+
+/* Input field styling */
+.price-input {
+    width: 80px;
+    height: 40px;
+    text-align: right;
+    padding-right: 30px; /* Add padding to make space for dollar sign */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    background-color: #f8f9fa;
+}
+
+/* Dollar sign styling */
+.dollar-sign {
+    position: absolute;
+    right: 10px; /* Position the dollar sign inside the input field */
+    top: 38%;
+    transform: translateY(-50%);
+    font-size: 16px; /* Same size as input text */
+    color: #555;
+    pointer-events: none; /* Prevent interaction with the dollar sign */
+}
