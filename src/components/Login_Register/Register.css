@@ -1,0 +1,105 @@
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .register-container {
+    background-color: rgba(255, 75, 75, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    align-items: center; /* Center the form elements */
+    text-align: center;
+  }
+  
+  .register-container h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .input-group input {
+    padding-left: 35px; /* Adjust to make room for the left icon */
+    width: calc(100% - 45px); /* Adjust to make room for the right icon */
+  }
+  
+  .password-group .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .remember-me input {
+    margin-right: 5px;
+  }
+  
+  .remember-me label {
+    color: white;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .Button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .Button:hover {
+    color: rgb(93, 21, 21);
+    background-color: white;
+    font-weight: bolder;
+  }
+  .login-container {
+    background-color: rgba(255, 75, 75, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;  /* Adjusted width to make the form more compact */
+    margin: auto;
+    align-items: center;  /* Center the form elements */
+    margin-bottom: 100px;
+    text-align: center;
+    color : black;
+    }
+  
